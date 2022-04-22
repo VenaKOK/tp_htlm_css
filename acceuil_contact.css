@@ -21,9 +21,8 @@ h3{
 article{
     border: solid 1px;
 }
-div{
+.image{
     text-align: center;
-    
 }
 img{
     border: solid  #8D99AE 2px;

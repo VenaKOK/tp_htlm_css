@@ -6,6 +6,52 @@
     <link rel="stylesheet" href="acceuil_contact.css">
 </head>
 <body>
-    
+    <header>
+        <div>
+            <img src="https://picsum.photos/800/200?random=1" alt="image bannière">
+        </div>
+        <h1>Accueil</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <Li><a href="#blog">Blog</a></Li>
+                <li>Gallerie</li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="file.php" method="post">
+            <fieldset>
+                <legend>contact</legend>
+                <div>
+                    <Label for="lastname">Nom :</Label>
+                    <input type="text" name="lastname" id="lastname" 
+                    placeholder="Ex : Dupont" 
+                    maxlength="20" 
+                    minlength="2">
+                </div>
+                <div>
+                    <Label for="email">E-mail :</Label>
+                    <input type="email" name="email" id="email" 
+                    placeholder=" Ex : patdupont@gmail.com"> 
+                <div>
+                    <div>
+                        <Label for="commentaires"> Laissez vos remarques :</Label> <br> <!-- br est à titre exceptionnel-->
+                        <textarea name="commentaires" id="commentaires" cols="70" rows="10" 
+                        placeholder="Votre avis importe !"></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="checkbox" id="checkbox" 
+                        checked> 
+                        <label for="checkbox">Envoyer une copie par E-mail</label>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" id="submit" value="Envoyer">
+                        <input type="reset" name="reset" id="reset" value="Reset">
+                    </div>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
